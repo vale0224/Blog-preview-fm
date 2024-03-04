@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;
+}
+
+
+.top-image{
+    display: flex;
+    justify-content: center;
+
+}
+
+.top-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+.container {
+    max-height: 800px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    border: 2px solid hsl(0, 0%, 7%); /* Added 'solid' as the border style */
+    border-right: 8px solid hsl(0, 0%, 7%); /* Added 'solid' as the border style */
+    border-bottom: 8px solid hsl(0, 0%, 7%);
+    gap: 1rem;
+    padding: 1.5rem 1rem ;
+}
+
+
+.learning-box{
+    background-color: hsl(47, 88%, 63%);
+    font-weight: bold;
+    padding: 0.5rem 1rem ;
+    max-width: 100px;
+    border-radius: 0.5rem;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.name-person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    gap: 0.7rem;
+}
+
+.name-person img{
+    max-height: 40px;
+}
+
+.paragraph{
+    color: hsl(0, 0%, 50%);
+    font-size: 16px;
+}
+
+h1:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    /* Adjust styles for phones */
+    body {
+        font-size: 14px;
+    }
+
+    .container{
+        max-width: 350px;
+    }
+
+}
